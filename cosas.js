@@ -1,4 +1,5 @@
-import {sayHi} from './FACTS';
+import { FactorialesShidos } from "./FACTS";
 
-alert(sayHi); // function...
-sayHi('John'); // Hello, John!
+const numero=5;
+FactorialesShidos(numero);
+
