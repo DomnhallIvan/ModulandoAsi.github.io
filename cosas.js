@@ -1,1 +1,4 @@
-import { name, age } from "./FACTS";
+import {sayHi} from './sayHi.js';
+
+alert(sayHi); // function...
+sayHi('John'); // Hello, John!
