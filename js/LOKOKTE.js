@@ -13,7 +13,7 @@ class Poligono_Regular_Shido {
     }
 }
 
-class Cuadrado extends Poligono_Regular_Shido {
+export class Cuadrado extends Poligono_Regular_Shido {
     obtenerArea() {
         if (this.lados.length === 4) {
             return this.lados[0] ** 2;
@@ -27,7 +27,7 @@ class Cuadrado extends Poligono_Regular_Shido {
     }
 }
 
-class Triangulo extends Poligono_Regular_Shido {
+export class Triangulo extends Poligono_Regular_Shido {
     obtenerArea() {
         if (this.lados.length === 3) {
             const [a, b, c] = this.lados;
@@ -45,7 +45,7 @@ class Triangulo extends Poligono_Regular_Shido {
 
 
 
-class Pentagono extends Poligono_Regular_Shido {
+export class Pentagono extends Poligono_Regular_Shido {
     obtenerArea() {
         if (this.lados.length === 5) {
             const lado = this.lados[0];
@@ -61,14 +61,4 @@ class Pentagono extends Poligono_Regular_Shido {
 }
 
 
-const triangulo = new Triangulo([6, 6, 6]);
-console.log(`Área del triángulo: ${triangulo.obtenerArea()}`);
-console.log(`Perímetro del triángulo: ${triangulo.obtenerPerimetro()}`);
 
-const cuadrado = new Cuadrado([5, 5, 5, 5]);
-console.log(`Área del cuadrado: ${cuadrado.obtenerArea()}`);
-console.log(`Perímetro del cuadrado: ${cuadrado.obtenerPerimetro()}`);
-
-const pentagono = new Pentagono([2, 2, 2, 2, 2]);
-console.log(`Área del pentágono: ${pentagono.obtenerArea()}`);
-console.log(`Perímetro del pentágono: ${pentagono.obtenerPerimetro()}`);

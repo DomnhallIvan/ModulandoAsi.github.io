@@ -16,9 +16,11 @@ export function Reloj_instantaneo() {
         console.log(`Con ${minutos} minutos `);
         console.log(`Y ${segundos} segundos `);
     }
+
     
   }
 
   setInterval(function () {
     Reloj_instantaneo();
   }, 1000);
+ 
